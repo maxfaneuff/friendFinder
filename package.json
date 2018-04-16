@@ -1,0 +1,27 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "for express hw",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/maxfaneuff/friendFinder.git"
+  },
+  "author": "max faneuff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxfaneuff/friendFinder/issues"
+  },
+  "homepage": "https://github.com/maxfaneuff/friendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "chosen-js": "^1.8.5",
+    "express": "^4.16.3",
+    "nodemon": "^1.17.3",
+    "path": "^0.12.7"
+  }
+}
