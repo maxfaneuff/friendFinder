@@ -31,14 +31,13 @@ router.get("/api/friends/:friend", function(req, res) {
 
 router.post("/api/friends", function(req, res) {
   var newFriend = req.body;
-  var friendsArr = friends.friendsList;
-  console.log(friendsArr);
+
   console.log(newFriend);
 
-  friends.friendList.push(newFriend);
+  friends.push(newFriend);
   res.json(newFriend);
   console.log("______________________________________________________");
-  console.log(friendList);
+  console.log(friends);
 });
 
 module.exports = router;
