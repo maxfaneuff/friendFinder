@@ -17,8 +17,8 @@ app.use(bodyParser.json());
 // app.use(express.static("/app/public"));
 // app.use(express.static("/app/routing"));
 // app.use(express.static("/app/data"));
-app.use(htmlRoutes);
 app.use(apiRoutes);
+app.use(htmlRoutes);
 app.listen(PORT, function() {
   console.log("App is listening on PORT " + PORT);
 });

@@ -2,6 +2,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
+var apiRoutes = require("./apiRoutes.js");
 
 console.log("export works");
 // Sets up the Express App
