@@ -33,6 +33,9 @@ router.post("/api/friends", function(req, res) {
   var newFriend = req.body;
 
   console.log(newFriend);
+  for (var i = 0; i < newFriend.scores.length; i++) {
+    newFriend.scores[i] = parseInt(newFriend.scores[i], 10);
+  }
 
   friends.push(newFriend);
   res.json(newFriend);
