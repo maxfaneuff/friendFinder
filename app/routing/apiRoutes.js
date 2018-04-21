@@ -50,9 +50,7 @@ router.post("/api/friends", function(req, res) {
     }
     newDiff = 0;
   }
-
   console.log(scoreDiff);
-  console.log("====scoreDiff above, bestFriend below====");
   console.log(bestFriend);
   res.json(bestFriend);
 });

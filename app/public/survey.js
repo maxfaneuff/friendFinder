@@ -56,4 +56,8 @@ $("#submit").on("click", function(event) {
   });
 });
 
+$("#btn-close").on("click", function() {
+  location.reload();
+});
+
 // for (var i = 0; i < count_array.length; i++) count_array[i] = +count_array[i];
