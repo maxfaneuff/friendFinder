@@ -50,7 +50,7 @@ $("#submit").on("click", function(event) {
     //shows scoresArr as string?!!
     console.log(data);
     friendsObj = data;
-    alert("Got your survey, thanks!");
+    // alert("Got your survey, thanks!");
   });
 });
 

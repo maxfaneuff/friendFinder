@@ -6,7 +6,7 @@
     <title>Friend Finder - Survey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- //Bootstrap// -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
     <!-- //Chosen// -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
@@ -85,8 +85,8 @@
                 <option value="4" id="q1a4">4</option>
                 <option value="5" id="q1a5">5 (Strongly Agree)</option>
             </select>
-
-
+            <br>
+            <br>
             <h3>
                 <strong>Question 2</strong>
             </h3>
@@ -98,7 +98,8 @@
                 <option value="4" id="q2a4">4</option>
                 <option value="5" id="q2a5">5 (Strongly Agree)</option>
             </select>
-
+            <br>
+            <br>
             <h3>
                 <strong>Question 3</strong>
             </h3>
@@ -110,8 +111,8 @@
                 <option value="4" id="q3a4">4</option>
                 <option value="5" id="q3a5">5 (Strongly Agree)</option>
             </select>
-
-
+            <br>
+            <br>
             <h3>
                 <strong>Question 4</strong>
             </h3>
@@ -123,7 +124,8 @@
                 <option value="4" id="q4a4">4</option>
                 <option value="5" id="q4a5">5 (Strongly Agree)</option>
             </select>
-
+            <br>
+            <br>
             <h3>
                 <strong>Question 5</strong>
             </h3>
@@ -135,7 +137,8 @@
                 <option value="4" id="q5a4">4</option>
                 <option value="5" id="q5a5">5 (Strongly Agree)</option>
             </select>
-
+            <br>
+            <br>
             <h3>
                 <strong>Question 6</strong>
             </h3>
@@ -147,7 +150,8 @@
                 <option value="4" id="q6a4">4</option>
                 <option value="5" id="q6a5">5 (Strongly Agree)</option>
             </select>
-
+            <br>
+            <br>
             <h3>
                 <strong>Question 7</strong>
             </h3>
@@ -159,7 +163,8 @@
                 <option value="4" id="q7a4">4</option>
                 <option value="5" id="q7a5">5 (Strongly Agree)</option>
             </select>
-
+            <br>
+            <br>
             <h3>
                 <strong>Question 8</strong>
             </h3>
@@ -171,7 +176,8 @@
                 <option value="4" id="q8a4">4</option>
                 <option value="5" id="q8a5">5 (Strongly Agree)</option>
             </select>
-
+            <br>
+            <br>
             <h3>
                 <strong>Question 9</strong>
             </h3>
@@ -183,7 +189,8 @@
                 <option value="4" id="q9a4">4</option>
                 <option value="5" id="q9a5">5 (Strongly Agree)</option>
             </select>
-
+            <br>
+            <br>
             <h3>
                 <strong>Question 10</strong>
             </h3>
@@ -197,9 +204,29 @@
             </select>
             <br>
             <br>
-            <button type="submit" id="submit" class="btn btn-primary btn-block">
+            <button type="button" id="submit" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal">
                 <span class="glyphicon glyphicon-check"></span> Submit</button>
 
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Your Best Friend</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </form>
 

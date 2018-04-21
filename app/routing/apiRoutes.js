@@ -24,10 +24,36 @@ router.post("/api/friends", function(req, res) {
     newFriend.scores[i] = parseInt(newFriend.scores[i], 10);
   }
 
-  friends.push(newFriend);
+  // friends.push(newFriend);
   res.json(newFriend);
   console.log("______________________________________________________");
   console.log(friends);
+  // compareScores(newFriend, friends);
+  var newFriendScores = newFriend.scores;
+  var scoreDiff = 50000;
+  var newDiff = 0;
+  var bestFriend;
+
+  for (var i = 0; i < friends.length; i++) {
+    var friendsScores = friends[i].scores;
+    console.log("---friendScores below---");
+    console.log(friendsScores);
+    console.log(newFriendScores);
+
+    for (var z = 0; z < friendsScores.length; z++) {
+      newDiff += Math.abs(friendsScores[z] - newFriendScores[z]);
+      console.log(newDiff);
+    }
+    if (newDiff < scoreDiff) {
+      scoreDiff = newDiff;
+      bestFriend = friends[i];
+    }
+    newDiff = 0;
+  }
+
+  console.log(scoreDiff);
+  console.log("====scoreDiff above, bestFriend below====");
+  console.log(bestFriend);
 });
 
 //router.push - to get your data into friends.js//
