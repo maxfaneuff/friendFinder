@@ -49,7 +49,9 @@ $("#submit").on("click", function(event) {
   $.post("/api/friends", addFriend).then(function(data) {
     //shows scoresArr as string?!!
     console.log(data);
-    friendsObj = data;
+    $("#friend-name").text(data.name);
+    $("#friend-img").attr("src", data.picLink);
+    $("#exampleModal").modal("show");
     // alert("Got your survey, thanks!");
   });
 });

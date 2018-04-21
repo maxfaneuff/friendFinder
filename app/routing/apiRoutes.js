@@ -25,7 +25,7 @@ router.post("/api/friends", function(req, res) {
   }
 
   // friends.push(newFriend);
-  res.json(newFriend);
+  // res.json(newFriend);
   console.log("______________________________________________________");
   console.log(friends);
   // compareScores(newFriend, friends);
@@ -54,6 +54,7 @@ router.post("/api/friends", function(req, res) {
   console.log(scoreDiff);
   console.log("====scoreDiff above, bestFriend below====");
   console.log(bestFriend);
+  res.json(bestFriend);
 });
 
 //router.push - to get your data into friends.js//
